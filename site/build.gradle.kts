@@ -25,6 +25,9 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(compose.runtime)
+                /*implementation("org.litote.kmongo:kmongo:4.10.0")
+                implementation("org.litote.kmongo:kmongo-async:4.10.0")
+                implementation("org.litote.kmongo:kmongo-coroutine:4.10.0")*/
             }
         }
 
@@ -35,6 +38,8 @@ kotlin {
                 implementation(libs.kobweb.silk)
                 implementation(libs.silk.icons.fa)
                 implementation(libs.kobwebx.markdown)
+                implementation(libs.kmongo.database)
+                implementation(libs.kotlin.serialization)
             }
         }
         val jvmMain by getting {
